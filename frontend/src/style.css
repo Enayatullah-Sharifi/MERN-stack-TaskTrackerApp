@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 40px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.header {
+  position: relative;
+  color: #fff;
+  background-color: blue;
+  padding: 10px;
+}
+
+.date {
+  color: gray;
+}
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+}
+.btn {
+  padding: 5px 15px;
+  margin: 5px;
+  color: black;
+  border: 1px solid black;
+}
+
+.checkbox {
+  background-color: rgb(223, 217, 217);
+  padding: 6px 10px;
+}
+.checkbox input {
+  margin-left: 6px;
+  
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.form-container form textarea {
+  width: 400px;
+  padding: 5px;
+  font-size: 1rem;
+  resize: none;
+}
+textarea:focus {
+  outline: none;
+}
+.form-container form .submit-btn {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* Spinner style */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.mac-spinner {
+  width: 50px;
+  text-align: center;
+}
+
+.mac-spinner div {
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+  /* background-color: #3498db; */
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.mac-spinner .dot1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.mac-spinner .dot2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
